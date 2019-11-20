@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>测试单元输出控制台</p>
+    <script src="./index.js"></script>
+    <script>
+        // 测试单元
+        var ceDate1={a:1,b:2,c:{b:1,c:1,d:{a:1,e:{e:1,d:1}}}};
+        var ceDate2={a:'qwe',b:'wer',c:'ert',d:'rty',e:{a:'qwe',b:'wer',c:{a:'qwe',b:'wer'}}};
+        new Tools().getObjKey(ceDate1,1)
+        console.log(arr);
+        arr=[];
+        new Tools().getObjKey(ceDate2,'e')
+        console.log(arr);
+    </script>
+</body>
+</html>
