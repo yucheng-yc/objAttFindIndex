@@ -1,0 +1,38 @@
+假设我们现在有一个js的对象A，我们需要记录对象A自身属性的值中包含变量b的属性的出现位置，并已数组的形式返回,如果不包含直接返回[]：
+
+现在需要您写一个 function，来实现这个功能。例如：
+
+// someFunction(目标对象，值)
+
+someFunction(
+  {
+    name: 'wang',
+    age: 20,
+  },
+  20,
+);
+// return ['age']
+
+someFunction(
+  {
+    name: 'wang',
+    age: 20,
+  },
+  40,
+);
+// return []
+
+
+someFunction(
+  {
+    name: 'wang',
+    age: 20,
+    address: {
+      city: 'beiji',
+      country: 'china',
+    },
+  },
+  'i',
+);
+// return ['address.city','address.country']
+---------------.
